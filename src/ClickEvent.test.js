@@ -1,11 +1,6 @@
 import { fireEvent, render, screen } from "@testing-library/react"
 import App from "./App"
 
-beforeEach(() => {
-    console.log("************ Before Each ************");
-
-})
-
 test('Click event test case ', () => {
     render(<App />)
     let btn = screen.getByRole("button")
