@@ -21,3 +21,50 @@ test('input box tests', () => {
   expect(checkInputBox).toHaveAttribute("type", "text")  // input should have attribute type with value "text"
 })
 
+
+describe('UI Test Case Group', () => {
+  test('test case 1', () => {
+    render(<App />)
+    let checkInput = screen.getByRole("textbox")
+    expect(checkInput).toHaveAttribute("name", "username")
+  })
+  test('test case 2', () => {
+    render(<App />)
+    let checkInput = screen.getByRole("textbox")
+    expect(checkInput).toHaveAttribute("name", "username")
+  })
+  test('test case 3', () => {
+    render(<App />)
+    let checkInput = screen.getByRole("textbox")
+    expect(checkInput).toHaveAttribute("name", "username")
+  })
+
+})
+
+
+describe('API Test Case Group', () => {
+  test('api test case 1', () => {
+    render(<App />)
+    let checkInput = screen.getByRole("textbox")
+    expect(checkInput).toHaveAttribute("name", "username")
+  })
+  test('api test case 2', () => {
+    render(<App />)
+    let checkInput = screen.getByRole("textbox")
+    expect(checkInput).toHaveAttribute("name", "username")
+  })
+  test('api test case 3', () => {
+    render(<App />)
+    let checkInput = screen.getByRole("textbox")
+    expect(checkInput).toHaveAttribute("name", "username")
+  })
+
+  describe('Inner describe test group', () => {
+    test('api inner test case 1', () => {
+      render(<App />)
+      let checkInput = screen.getByRole("textbox")
+      expect(checkInput).toHaveAttribute("name", "username")
+    })
+  })
+
+})
