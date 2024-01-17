@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <h1>Test Click Event with Button</h1>
-      <button onClick={() => setData("Updated data")}>Update data</button>
+      <button onClick={() => setData("Updated data")}>Update the data</button>
       <h1>{data}</h1>
       {/* actually we want to check when we are clicking on button is the {data} is rendering on UI */}
     </div>
