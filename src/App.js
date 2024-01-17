@@ -1,10 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const [data, setData] = useState()
   return (
     <div className="App">
-      <input type="text" id='userId' placeholder='Enter the username' name='username' />
+      <h1>Test onChange Event with input text</h1>
+      <input type="text" value={data} onChange={(e) => setData(e.target.value)} />
     </div>
   );
 }
