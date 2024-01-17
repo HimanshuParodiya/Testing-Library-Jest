@@ -3,11 +3,13 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-  const [data, setData] = useState()
+  const [data, setData] = useState("")
   return (
     <div className="App">
-      <h1>Test onChange Event with input text</h1>
-      <input type="text" value={data} onChange={(e) => setData(e.target.value)} />
+      <h1>Test Click Event with Button</h1>
+      <button onClick={() => setData("Updated data")}>Update data</button>
+      <h1>{data}</h1>
+      {/* actually we want to check when we are clicking on button is the {data} is rendering on UI */}
     </div>
   );
 }
